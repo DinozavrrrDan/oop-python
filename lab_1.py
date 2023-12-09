@@ -93,7 +93,7 @@ class Human:
 class Animal:
     def __init__(self, specie: str, average_lifetime: float):
         """
-        Создание и подготовка к работе объекта "Стул"
+        Создание и подготовка к работе объекта "Животное"
 
         Аргументы:
         :param specie: Вид животного
@@ -105,7 +105,7 @@ class Animal:
         if not isinstance(average_lifetime, (int, float)):
             raise TypeError("Средняя продолжительность жизни животного int или float")
         if average_lifetime <= 0:
-            raise ValueError("Средняя продолжительность жизни животного должена быть положительным числом")
+            raise ValueError("Средняя продолжительность жизни животного должна быть положительным числом")
         self.specie = specie
         self.average_lifetime = average_lifetime
 
